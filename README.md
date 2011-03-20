@@ -12,8 +12,14 @@ I made several changes to mnmlist theme and re-uploading it, as is. It is a very
 * helvetica font, not verdana
 * a few other minor and subtle changes I cannot remember of now
 
-### To-do:
-* add a search form above archives page, also search landing page
+### Update 0.1:
+* added a search page placeholder in sidebarh.php. I did not write a WP search workaround, on the other hand see below for how to create a search page/form
+
+### The search how-to:
+* Create a Google Custom Search Engine (if you have multiple subdomains, use the "http://www.yoururl.com/*\" format
+* Go to Wordpress dashboard, create new page, name it Search, in the HTML editor paste Google's code
+* Go to sidebar.php and replace "YOUR_LINKZ" of the search <li> with your search page
+* congrats, you made it
 
 ### Notes:
 * in single.php, if you want to keep the twitter share button, go to twitter and re-grab the code; otherwise after someone clicks it, it will pop-up to follow my twitter and not yours

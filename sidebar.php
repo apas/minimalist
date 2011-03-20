@@ -18,6 +18,8 @@
 
 <li><a href="YOUR_LINKZ">contact</a></li>
 
+<li><a href="YOUR_LINKZ">search</a></li>
+
 <li><a href="YOUR_LINKZ">kopimi</a></li>
 
 <li>@<a href="YOUR_TWITTERZ">USERNAME</a> | <a href="RSS_URL"><img src="RSS ICON URL"</a> </li>
