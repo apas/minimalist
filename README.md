@@ -14,9 +14,10 @@ I made several changes to mnmlist theme and re-uploading it, as is. It is a very
 
 ### Update 0.1:
 * added a search page placeholder in sidebarh.php. I did not write a WP search workaround, on the other hand see below for how to create a search page/form
+* added social media icons in /images folder
 
 ### The search page how-to:
-* Create a Google Custom Search Engine (if you have multiple subdomains, use the "http://www.yoururl.com/*\" format
+* Create a Google Custom Search Engine (if you have multiple subdomains, use the "http://www.yoururl.com/*" format
 * Go to Wordpress dashboard, create new page, name it Search, in the HTML editor paste Google's code
 * Go to sidebar.php and replace "YOUR_LINKZ" of the search <li> with your search page
 * congrats, you made it
