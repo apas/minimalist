@@ -20,9 +20,9 @@
 
 <li><a href="YOUR_LINKZ">search</a></li>
 
-<li><a href="YOUR_LINKZ">kopimi</a></li>
+<li><a href="http://apas.gr/kopimi">kopimi</a></li> <br />
 
-<li>@<a href="YOUR_TWITTERZ">USERNAME</a> | <a href="RSS_URL"><img src="RSS ICON URL"</a> </li>
+<li><a href="TWITTER_URL"><img src="YOUR_IMG_URL/twitter.png" height="14" /></a> | <a href="RSS_URL"><img src="YOUR_IMG_RUL/rss.png" /></a> | <a href="EMAIL_FEEDBURNER_URL"><img src="YOUR_IMG_URL/mail.png" height="14" /></a> </li>
 
 		</ul>
 		</div>
