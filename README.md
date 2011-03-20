@@ -19,7 +19,7 @@ I made several changes to mnmlist theme and re-uploading it, as is. It is a very
 ### The search page how-to:
 * Create a Google Custom Search Engine (if you have multiple subdomains, use the "http://www.yoururl.com/*" format
 * Go to Wordpress dashboard, create new page, name it Search, in the HTML editor paste Google's code
-* Go to sidebar.php and replace "YOUR_LINKZ" of the search <li> with your search page
+* Go to sidebar.php and replace "YOUR_LINKZ" of the search list item with your search page
 * congrats, you made it
 
 ### Notes:
