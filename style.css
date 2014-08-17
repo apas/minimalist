@@ -2,10 +2,10 @@
 Theme Name: mnmlist
 Theme URI: http://dannycooper.org/theme/
 Description: A very clean minimalist theme, search, archives or other features.
-Author: Danny Cooper
+Author: Danny Cooper, Stefan Wilhelm
 Author URI: http://dannycooper.org
 Tags: white, two-columns, fixed-width
-Version: 1.0
+Version: 1.1
 .
 This theme is uncopyrighted, free, and offered as is.
 .
@@ -39,12 +39,8 @@ li{line-height: 18px; padding: 6px 0 0 0;}
 ol{padding: .5em 0em 0em 3.2em;}
 li{line-height: 18px; padding: 6px 0 0 0;}
 
-#facebook {padding-top: -10px;}
-
-#header {position:fixed; }
-
-#header h2{padding: 0 0 0 0; margin:0; color: #333; font: Helvetica, sans-serif; font-size: 16pt; font-weight: normal;}
-#header h3{padding: 5px 0 20px 0; margin:0; color: #777777; font-weight: normal; font-size: 12pt;}
+header h2{padding: 0 0 0 0; margin:0; color: #333; font: Helvetica, sans-serif; font-size: 16pt; font-weight: normal;}
+header h3{padding: 5px 0 20px 0; margin:0; color: #777777; font-weight: normal; font-size: 12pt;}
 
 #content {float: right;	width:530px; overflow: hidden;
 	margin-top:80px; margin-left:14px; margin-right:14px; margin-bottom:24px;}	

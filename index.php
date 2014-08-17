@@ -1,28 +1,27 @@
 <?php get_header(); ?>
 
-	<div id="content">
-	<div id="latest">latest posts</div>
+	<section id="content">
+		<div id="latest">latest posts</div>
 
-	<?php if (have_posts()) : ?>
+		<?php if (have_posts()) : ?>
 
-		<?php while (have_posts()) : the_post(); ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-			<div class="post" id="post-<?php the_ID(); ?>">
-				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+				<aside class="post" id="post-<?php the_ID(); ?>">
+					<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+				</aside>
+			<?php endwhile; ?>
 
-			</div>
-		<?php endwhile; ?>
+				<?php next_posts_link('&laquo; Older') ?> | <?php previous_posts_link('Newer &raquo;') ?>
 
-			<?php next_posts_link('&laquo; Older') ?> | <?php previous_posts_link('Newer &raquo;') ?>
+		<?php else : ?>
 
-	<?php else : ?>
+			<h2 class="center">Not Found</h2>
+			<p class="center">Sorry, but you are looking for something that isn't here.</p>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<?php endif; ?>
 
-	<?php endif; ?>
-
-	</div>
+	</section>
 
 <?php get_sidebar(); ?>
 
