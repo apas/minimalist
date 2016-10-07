@@ -1,5 +1,21 @@
 <?php
 
+add_theme_support( 'title-tag' );
+add_theme_support( 'automatic-feed-links' );
+
+if ( ! isset( $content_width ) ) {
+  $content_width = 900;
+}
+
+add_action('after_setup_theme', 'minimalist_theme_setup');
+ 
+/**
+ * Load translations for wpdocs_theme
+ */
+function minimalist_theme_setup(){
+    load_theme_textdomain('minimalist', get_template_directory() . '/languages');
+}
+
 /**
  * Register menus to use in backend.
  *
@@ -7,9 +23,9 @@
 function register_menus() {
   register_nav_menus(
     array(
-      'main-menu' => __( 'Main Menu' ),
-      'sidebar-menu' => __( 'Sidebar Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
+      'main-menu' => __( 'Main Menu', 'minimalist' ),
+      'sidebar-menu' => __( 'Sidebar Menu', 'minimalist' ),
+      'footer-menu' => __( 'Footer Menu', 'minimalist' )
     )
   );
 }
@@ -31,25 +47,5 @@ function my_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'my_widgets_init' );
-
-/**
- * new Option fields in backend in menu settings.
- *
- */
-$new_general_setting = new new_general_setting();
-
-class new_general_setting {
-    function new_general_setting( ) {
-        add_filter( 'admin_init' , array( &$this , 'register_fields' ) );
-    }
-    function register_fields() {
-        register_setting( 'general', 'avatar_url', 'esc_attr' );
-        add_settings_field('fav_color', '<label for="avatar_url">'.__('Avatar URL' , 'avatar_url' ).'</label>' , array(&$this, 'fields_html') , 'general' );
-    }
-    function fields_html() {
-        $value = get_option( 'avatar_url', '' );
-        echo '<input type="text" id="avatar_url" name="avatar_url" value="' . $value . '" />';
-    }
-}
 
 ?>
