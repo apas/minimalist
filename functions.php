@@ -40,7 +40,7 @@ function my_widgets_init() {
     register_sidebar( array(
         'name' => 'Main Sidebar',
         'id' => 'main_sidebar',
-        'before_widget' => '<aside',
+        'before_widget' => '<aside>',
         'after_widget' => '</aside>',
         'before_title' => '<h4 class="rounded">',
         'after_title' => '</h4>',
