@@ -1,22 +1,11 @@
-<div id="footer">
+	</div>
 
-
-
-	<p>
-
-		<small><a href="YOUR_URL">WHATEVER YOU &mdash; WANT</a></small>
-
-	</p>
-
-</div>
-
-</div>
-
-
-
-<?php wp_footer(); ?>
-
+	<footer>
+		<nav>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+		</nav>
+	</footer>
+	<?php wp_footer(); ?>
 </body>
-
 </html>
 
